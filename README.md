@@ -41,20 +41,24 @@ hermes skills list
 
 ## Install into a Paperclip instance
 
-### Option A: install from GitHub once pushed
+### Option A: install from GitHub
 
 ```bash
 curl -X POST http://127.0.0.1:3100/api/plugins/install \
   -H "Content-Type: application/json" \
-  -d '{"packageName":"github:OWNER/paperclip-plugin-hermes-bridge"}'
+  -d '{"packageName":"github:xXKillerNoobYT/paperclip-plugin-hermes-bridge"}'
 ```
 
-Replace `OWNER` with the GitHub owner.
+If your Paperclip build expects npm's shorthand GitHub spec instead, use:
+
+```json
+{"packageName":"xXKillerNoobYT/paperclip-plugin-hermes-bridge"}
+```
 
 ### Option B: install from a local clone
 
 ```bash
-git clone https://github.com/OWNER/paperclip-plugin-hermes-bridge.git
+git clone https://github.com/xXKillerNoobYT/paperclip-plugin-hermes-bridge.git
 cd paperclip-plugin-hermes-bridge
 npm pack
 npm install -g ./paperclip-plugin-hermes-bridge-0.1.0.tgz
