@@ -1,0 +1,28 @@
+{
+  "name": "paperclip-plugin-hermes-bridge",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "paperclipPlugin": {
+    "manifest": "./dist/manifest.js",
+    "worker": "./dist/worker.js"
+  },
+  "description": "Third-party Paperclip plugin that exposes Hermes Agent skills, memory, session recall, and quality-management workflows as Paperclip tools without modifying Paperclip core or agent instruction files.",
+  "license": "MIT",
+  "peerDependencies": {
+    "@paperclipai/plugin-sdk": "*",
+    "@paperclipai/shared": "*"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "keywords": [
+    "paperclip",
+    "plugin",
+    "hermes",
+    "skills",
+    "memory",
+    "agent-tools"
+  ]
+}
