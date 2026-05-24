@@ -334,4 +334,4 @@ const plugin = definePlugin({
   },
 });
 
-runWorker(plugin);
+runWorker(plugin, import.meta.url);
