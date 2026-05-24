@@ -8,7 +8,7 @@ const manifest = {
   description:
     "Expose Hermes Agent skills, memory, session recall, and quality-management workflows to Paperclip agents as a third-party plugin. Does not replace agent files or patch Paperclip core.",
   author: "IA / Hermes",
-  categories: ["connector", "automation", "agent-tools"],
+  categories: ["connector", "automation"],
   capabilities: [
     "agent.tools.register",
     "activity.log.write",
